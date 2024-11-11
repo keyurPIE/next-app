@@ -12,7 +12,7 @@ export default function DashboardLayout({
   return (
     <section>
       <Box>
-        <Box>
+        <Box display="flex" flexDirection="column" gap={6}>
           <Navbar />
           <Suspense fallback={<Loading />}>{children}</Suspense>
           <Footer />

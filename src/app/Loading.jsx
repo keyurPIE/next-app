@@ -32,7 +32,7 @@ const Style = styled.div({
   "span[data-id]::before": {
     opacity: "0",
     lineHeight: "1",
-    fontSize: "50px",
+    fontSize: "25px",
     content: "attr(data-id)",
     backgroundPosition: "center",
     animation: `${fade} 4s ease-in-out calc(0.45s * var(--data-x))`,
@@ -57,7 +57,7 @@ export default function Loading() {
   //   }
   return (
     <Stack>
-      <Style>
+      {/* <Style>
         <span data-id="L" style={{ "--data-x": 1 }}></span>
         <span data-id="Lo" style={{ "--data-x": 2 }}></span>
         <span data-id="Loa" style={{ "--data-x": 3 }}></span>
@@ -68,10 +68,10 @@ export default function Loading() {
         <span data-id="Loading." style={{ "--data-x": 8 }}></span>
         <span data-id="Loading.." style={{ "--data-x": 9 }}></span>
         <span data-id="Loading..." style={{ "--data-x": 10 }}></span>
-      </Style>
+      </Style> */}
       {/* <Box>{progress}</Box> */}
       {/* <Typography>Loading.....</Typography> */}
-      <div className="loading">
+      {/* <div className="loading">
         <svg className="pl" width="240" height="240" viewBox="0 0 240 240">
           <circle
             className="pl__ring pl__ring--a"
@@ -120,6 +120,9 @@ export default function Loading() {
             strokeLinecap="round"
           ></circle>
         </svg>
+      </div> */}
+      <div className="introLoading">
+        <span>Loading</span>
       </div>
     </Stack>
   );

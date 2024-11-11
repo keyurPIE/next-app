@@ -16,7 +16,8 @@ import { Facebook, Instagram, LinkedIn, Twitter } from "@mui/icons-material";
 import { styled } from "@mui/system";
 
 const FooterContainer = styled(Box)(({ theme }) => ({
-  backgroundColor: "#1a237e",
+  // backgroundColor: "#1a237e",
+  backgroundColor: "#1E1E1E",
   color: "#ffffff",
   padding: theme.spacing(6, 0),
   marginTop: "auto",
